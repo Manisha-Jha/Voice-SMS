@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.learning.android.speechsms.com.android.learning.speechsms.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_text"
+            android:textColor="@color/colorAccent"
+            android:labelFor="@id/actvPhoneNumber"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:id="@+id/actvPhoneNumber"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contacts_black_24dp"
+                android:onClick="getContacts"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/custom_bg"
+            android:foreground="@color/colorAccent"
+            android:foregroundGravity="center"
+            android:onClick="startListening"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_mic_black_120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_text"
+            android:textColor="@color/colorAccent"
+            android:labelFor="@id/etMessage"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:scrollHorizontally="false"
+            android:background="@drawable/message_background"
+            android:inputType="textMultiLine"
+            android:hint="@string/message_text"
+            android:id="@+id/etMessage"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnSendSMS"
+            android:onClick="sendSMS"
+            android:text="@string/send_sms_text"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

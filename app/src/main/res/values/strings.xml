@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Speech Sakha</string>
+    <string name="error_audio_error">Audio recording error.</string>
+    <string name="error_client">Other client side errors.</string>
+    <string name="error_permission">Insufficient permissions</string>
+    <string name="error_network">Other network related errors.</string>
+    <string name="error_timeout">Network operation timed out.</string>
+    <string name="error_no_match">No recognition result matched.</string>
+    <string name="error_busy">RecognitionService busy.</string>
+    <string name="error_server">Server sends error status.</string>
+    <string name="error_speech_timeout">No speech input</string>
+    <string name="error_understand">Unable to understand the input</string>
+    <string name="to_text">To</string>
+    <string name="message_text">Message</string>
+    <string name="need_permission_text">This app needs the permission for proper functioning</string>
+    <string name="send_sms_text">Send</string>
+    <string name="ok_text">OK</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="key_phrase">Sakha</string>
+    <string name="find_text">find</string>
+    <string name="contact_not_found_text">Contact %1$s not found</string>
+    <string name="call_text">call</string>
+    <string name="help_text">Help</string>
+    <string name="app_help_text"><![CDATA[Sakha find <Contact Name> \n
+ - Matches <Contact Name> with contact in device and displays number in To Field \n
+Sakha <Number> \n
+ - Put the number in To field \n
+Sakha call <Contact Name> \n
+ - Matches <Contact Name> with contact in device and calls the number \n
+<Text> \n
+ - Displays the selected text in Message field \n
+Contact names can be selected manually by clicking on Contact button (next to To field)]]></string>
+    <string name="enter_valid_phone_text">Kindly enter a valid phone number.</string>
+    <string name="enter_valid_msg_text">Please enter a valid message.</string>
+    <string name="select_a_contact_text">Kindly select atleast one contact.</string>
+    <string name="sms_sent_text">SMS has been sent %1$s</string>
+    <string name="invalid_phone_num_text">Invalid phone number %1$s</string>
+</resources>
